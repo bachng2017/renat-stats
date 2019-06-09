@@ -64,6 +64,8 @@ This will bring up the stack and push the dashboard configuration.
 $ cd renat-stats
 $ ./init.sh
 ```
+The running stack will have a docker network called ``renat`` to bind all the ELK component.
+
 *Note*: this will clear all existed data in the stack 
 
 
