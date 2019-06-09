@@ -32,7 +32,8 @@ filebeat.inputs:
     service: renat
 output.logstash:
   hosts: ["<renat-stats-logstash-ip>:5044"]
-...
+```
+
 where `<renat-stats-logstash-ip>` is the logstash IP of the stack. In case the renat container is running within the same docker network, it could be just `logstash`.
 
 4. restart the filebeat service
