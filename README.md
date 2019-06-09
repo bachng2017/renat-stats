@@ -18,7 +18,7 @@ type=rpm-md
 2. install ELK filebeat
 
 ```
-yum install -y filebeat
+$ yum install -y filebeat
 ```
 
 3. configure filebeat service by editing `/etc/filebeat/filebeat.yml` to have at least those
@@ -38,7 +38,12 @@ where `<renat-stats-logstash-ip>` is the logstash IP of the stack. In case the r
 4. restart the filebeat service
 
 ```
-systemctl restart filebeat
+$ systemctl restart filebeat
+```
+and confirm the status of the service
+
+```
+$ systemctl status filebeat
 ```
 
 
