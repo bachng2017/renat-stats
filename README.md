@@ -18,10 +18,16 @@ type=rpm-md
 2. install ELK filebeat
 
 ```
-$ yum install -y filebeat
+$ yum install -y filebeat rsyslog
 ```
 
-3. configure filebeat service by editing `/etc/filebeat/filebeat.yml` to have at least those
+4. configure the rsyslog service by edite `/etc/rsyslog.conf`
+
+```
+local5.*                        /var/log/renat/renat.log
+```
+
+3. configure filebeat service by editing `/etc/filebeat/filebeat.yml` to have at least those setting
 ```yaml:filebeat.yml
 filebeat.inputs:
 - type: log
@@ -36,19 +42,20 @@ output.logstash:
 
 where `<renat-stats-logstash-ip>` is the logstash IP of the stack. In case the renat container is running within the same docker network, it could be just `logstash`.
 
-4. restart the filebeat service
+4. restart the service
 
 
 ```
 $ systemctl restart filebeat
+$ systemctl restart rsyslog
 
 ```
 and confirm the status of the service
 
 ```
 $ systemctl status filebeat
+$ systemctl status rsyslog
 ```
-
 
 
 ## Using the renat-stats
