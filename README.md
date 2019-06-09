@@ -52,18 +52,20 @@ $ systemctl status filebeat
 
 
 ## Using the renat-stats
-- Initialize the stack
+1. Clone the stack from git repository
+
+```
+$ git clone http://10.128.3.50/gitlab/bachng/renat-stats.git
+```
+
+- Initialize and start the stack
 This will bring up the stack and push the dashboard configuration.
 ```
+$ cd renat-stats
 $ ./init.sh
 ```
 *Note*: this will clear all existed data in the stack 
 
-- Start the stack
-
-```
-$ ./start.sh
-```
 
 - Stop and remove the stack
 
