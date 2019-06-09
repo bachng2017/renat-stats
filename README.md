@@ -52,15 +52,24 @@ $ systemctl status filebeat
 
 
 ## Using the renat-stats
-1. Start the stack
+- Initialize the stack
+This will bring up the stack and push the dashboard configuration.
+```
+$ ./init.sh
+```
+*Note*: this will clear all existed data in the stack 
+
+- Start the stack
 
 ```
 $ ./start.sh
 ```
 
-2. Stop and remove the stack
+- Stop and remove the stack
 
 ```
 $ ./stop.sh
 ```
 The ELK data will remains in `./elasticsearch/data`
+
+
