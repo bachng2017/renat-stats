@@ -1,0 +1,38 @@
+### Current folder is /home/robot/work/scenario/sample/test01 ###
+Run only once
+
+Run: 001
+Current local.yaml: /home/robot/work/scenario/sample/test01/config/local.yaml
+Loaded extra library `Hypervisor`
+==============================================================================
+test01 :: This is a sample test item                                          
+==============================================================================
+RENAT Ver:: RENAT 0.1.16
+------------------------------------------------------------------------------
+README:
+Write you readme file here
+
+
+------------------------------------------------------------------------------
+00. Lab Setup
+------------------------------------------------------------------------------
+01. Cabling                                                           | PASS |
+------------------------------------------------------------------------------
+02. Load router config                                                | PASS |
+------------------------------------------------------------------------------
+03. Start traffic                                                     | PASS |
+------------------------------------------------------------------------------
+04. Run test                                                          | PASS |
+------------------------------------------------------------------------------
+05. Collect information                                               | PASS |
+------------------------------------------------------------------------------
+99. Lab Teardown
+------------------------------------------------------------------------------
+test01 :: This is a sample test item                                  | PASS |
+5 critical tests, 5 passed, 0 failed
+5 tests total, 5 passed, 0 failed
+==============================================================================
+Output:  /home/robot/work/scenario/sample/test01/result/output.xml
+Log:     /home/robot/work/scenario/sample/test01/result/log.html
+Report:  /home/robot/work/scenario/sample/test01/result/report.html
+

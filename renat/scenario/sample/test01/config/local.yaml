@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+# $Rev: 203 $
+# $Ver: $
+# $Date: 2017-04-19 10:14:50 +0900 (Wed, 19 Apr 2017) $
+# $Author: $
+
+# router, server setting
+node:
+
+# web application setting
+webapp:
+
+# hypervisor setting
+hypervisor:
+
+# L1 switch information
+optic:
+    connection:
+
+# tester information
+tester:
+
+# other default information
+default:
+    terminal:
+        width: 80
+        height: 32
+
