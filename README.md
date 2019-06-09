@@ -1,6 +1,6 @@
 renat-stats is a ELK docker composer with predefined dashboard to track your renat scenario
 
-### Prepare the renat server to send data to this stack
+## Prepare the renat server to send data to this stack
 The renat official container came with this ability already. If you install the renat server by your own, follow these steps to send data to the renat-stats stack.
 
 1. add ELK 7.1 repository `/etc/yum.repos.d/elasticsearch.repo`
@@ -37,8 +37,10 @@ where `<renat-stats-logstash-ip>` is the logstash IP of the stack. In case the r
 
 4. restart the filebeat service
 
+
 ```
 $ systemctl restart filebeat
+
 ```
 and confirm the status of the service
 
@@ -47,7 +49,8 @@ $ systemctl status filebeat
 ```
 
 
-### Using the renat-stats
+
+## Using the renat-stats
 1. Start the stack
 
 ```
