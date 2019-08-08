@@ -1,5 +1,7 @@
 renat-stats is a ELK docker composer with predefined dashboard to track your renat scenario
 
+![sample](renat-stats-sample.png)
+
 ## Prepare the renat server to send data to this stack
 The renat official container came with this ability already. If you install the renat server by your own, follow these steps to send data to the renat-stats stack.
 
